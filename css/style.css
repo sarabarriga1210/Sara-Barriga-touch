@@ -1,307 +1,33 @@
 
-@import url("https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
 
 body {
-    background-color: pink;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-
-#contenedor{
-    position: fixed;
-    width: 70%;
-    background-color: white;
-    left:50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+#touch-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100vh;
-    width: auto;
-    height: auto;
-    display: block;
-    margin:0 auto;
-}
-
-
-#ventana1 {
-  position: absolute;
-  top: 4.6%;
-  left: 29%;
-  width: 6.7%;
-  height: 7.7%;
-  opacity: 0;
-}
-
-
-#ventana1:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-#ventana2 {
-  position: absolute;
-  top: 5%;
-  left: 65%;
-  width: 6.7%;
-  height: 7.4%;
-  opacity: 0;
-}
-
-#ventana2:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-
-#ventana3 {
-  position: absolute;
-  top: 27.1%;
-  left: 24%;
-  width: 8.7%;
-  height: 13.2%;
-  opacity: 0;
-}
-
-#ventana3:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-#ventana4 {
-  position: absolute;
-  top: 27%;
-  left: 54%;
-  width: 9%;
-  height: 12%;
-  opacity: 0;
-}
-
-#ventana4:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-#ventana5 {
-  position: absolute;
-  top: 55%;
-  left: 53.5%;
-  width: 9.4%;
-  height: 12.3%;
-  opacity: 0;
-}
-
-#ventana5:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-#ventana6 {
-  position: absolute;
-  top: 55.9%;
-  left: 67%;
-  width: 10.2%;
-  height: 15.4%;
-  opacity: 0;
-}
-
-#ventana6:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-#ventana7 {
-  position: absolute;
-  top: 82%;
-  left: 23%;
-  width: 9.9%;
-  height: 13.1%;
-  opacity: 0;
-}
-
-#ventana7:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-
-#ventana8 {
-  position: absolute;
-  top: 25%;
-  left: 38%;
-  width: 7%;
-  height: 22%;
-  opacity: 0;
-}
-
-
-#ventana8:hover {
-  position: absolute;
-  opacity: 1;
-  border-color: palevioletred;
-  border-style: solid;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-#informacion-ventana8 {
-  position: absolute;
-  bottom: 20%;
-  background-color: white;
-  border-style: solid;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  font-family: "The Girl Next Door", cursive;
-  font-size: 20px;
-  opacity: 0;
-}
-
-#ventana9 {
-  position: absolute;
-  top: 25%;
-  left: 68%;
-  width: 7%;
-  height: 22%;
-  opacity: 0;
-}
-
-#ventana9:hover {
-  position: absolute;
-  opacity: 1;
-  border-color: palevioletred;
-  border-style: solid;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-#informacion-ventana9 {
-  position: absolute;
-  bottom: 20%;
-  background-color: white;
-  border-style: solid;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  font-family: "The Girl Next Door", cursive;
-  font-size: 20px;
-  opacity: 0;
-}
-
-#ventana10 {
-  position: absolute;
-  top: 53.5%;
-  left: 24.7%;
-  width: 7%;
-  height: 22%;
-  opacity: 0;
-}
-
-#ventana10:hover {
-  position: absolute;
-  opacity: 1;
-  border-color: palevioletred;
-  border-style: solid;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-#informacion-ventana10 {
-  position: absolute;
-  bottom: 20%;
-  background-color: white;
-  border-style: solid;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  font-family: "The Girl Next Door", cursive;
-  font-size: 20px;
-  opacity: 0;
-}
-
-#ventana11 {
-  position: absolute;
-  top: 80%;
-  left: 68%;
-  width: 7%;
-  height: 19.5%;
-  opacity: 0;
-}
-
-#ventana11:hover {
-  position: absolute;
-  opacity: 1;
-  border-color: palevioletred;
-  border-style: solid;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-#informacion-ventana11 {
-  position: absolute;
-  bottom: 20%;
-  background-color: white;
-  border-style: solid;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  font-family: "The Girl Next Door", cursive;
-  font-size: 20px;
-  opacity: 0;
-}
-
-#ventana12 {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  width: 7%;
-  height: 19.5%;
-  opacity: 0;
-}
-
-#ventana12:hover{
-  position: absolute;
-  opacity: 1;
-  border-color: palevioletred;
-  border-style: solid;
-  font-size: 30px;
-  cursor: pointer;
-
-}
-
-#informacion-ventana12 {
-  position: absolute;
-  bottom: 20%;
-  background-color: white;
-  border-style: solid;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  font-family: "The Girl Next Door", cursive;
-  font-size: 20px;
-  opacity: 0;
-}
-
-
-#contenedor-hora {
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  transform: translateX(-50%);
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 20px;
-  opacity: 1;
-  height: auto;
-  z-index: 9999;
-}
-
-#contenedor-hora p {
-  margin: 0;
-  margin: 5px;
+#counter {
+  font-size: clamp(6rem, 25vw, 20rem);
+  font-weight: 400;
+  line-height: 1;
 }
